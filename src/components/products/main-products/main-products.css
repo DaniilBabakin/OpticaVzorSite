@@ -193,8 +193,7 @@
 
 
 /*-------------------------Карусель----------------------------*/
-.rec.rec-dot {
-}
+
 .rec.rec-dot_active {
   background-color: #f27f38;
   box-shadow: 0 0 1px 3px #f27f38;
@@ -210,19 +209,19 @@
   box-shadow: 0 0 1px 3px #f27f38 !important;
 }
  /*Левая кнопка*/
-.eWjCzc{
+.rec-arrow-left{
   background-color: rgba(183, 123, 58, 0.1) !important;
 }
-.eWjCzc:hover:enabled, .eWjCzc:focus:enabled {
+.rec-arrow-left:hover:enabled, .rec-arrow-left:focus:enabled {
   color: #fff;
   background-color: #f27f38 !important;
   box-shadow: 0 0 2px 0 #333;
 }
  /*Правая кнопка*/
-.eAyARa{
+.rec-arrow-right{
   background-color: rgba(183, 123, 58, 0.1) !important;
 }
-.eAyARa:hover:enabled, .eAyARa:focus:enabled {
+.rec-arrow-right:hover:enabled, .rec-arrow-right:focus:enabled {
   color: #fff;
   background-color: #f27f38 !important;
   box-shadow: 0 0 2px 0 #333;
