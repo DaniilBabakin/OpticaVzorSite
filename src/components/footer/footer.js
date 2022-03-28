@@ -1,5 +1,8 @@
 import Logo from '../../logo'
 import './footer.css'
+import {Link}  from "react-router-dom"
+import * as ROUTES from '../../constants/routes'
+
 export default function Footer(){
   return(
     <footer className="footer">
@@ -12,9 +15,10 @@ export default function Footer(){
       <div className="col">
         <h1>Компания</h1>
         <ul>
-          <li>Главная</li>
-          <li>О нас</li>
-          <li>Контакты</li>
+            <Link to={ROUTES.MAIN}><li className='links__item'>Главная</li></Link>
+            <Link to={ROUTES.PRODUCTS}><li className='links__item'>Каталог</li></Link>
+            <Link to={ROUTES.ABOUT_US}><li className='links__item'>О нас</li></Link>
+            <Link to={ROUTES.CONTACTS}><li className='links__item'>Контакты</li></Link>
         </ul>
       </div>
       <div className="col">

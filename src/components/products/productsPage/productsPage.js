@@ -24,7 +24,6 @@ export default function ProductPageProducts(){
   return(
     <section className="products__div">
       <FilterMenu active={active} setActive={setActive}/>
-
       {/* Меню фильтрации */}
       <aside className="products__aside" style={{width:"200px",background:"#c4c4c4",height:"100px"}}>
       <button onClick={()=>setActive(true)}>ФильтрМеню</button>
@@ -36,7 +35,7 @@ export default function ProductPageProducts(){
             .filter((item)=> item.category.join("").includes(filter.sort().join("")))
             .map(item =>  <div className="product__item" ><ProductItem key={item.id} item={item}/></div>)}
       </div>
-      
+
       {/* Контейнер для пагинации(кнопки) */}
       <div style={{display:"flex",justifyContent:"center"}}>
         <Pagination productsPerPage={productsPerPage} totalProducts={currentProductsCount.length} paginate={paginate}/>

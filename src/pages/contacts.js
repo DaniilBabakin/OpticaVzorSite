@@ -21,18 +21,18 @@ export default function Contacts (){
         <h1 style={{marginBottom:"30px",marginTop:"50px"}}>Как до нас добраться</h1>
 
         {/* Основная часть */}
-          <div style={{height:"80vh",width:"70vw",display:"flex",flexDirection:"row",alignItems:"start",justifyContent:"space-evenly",flexWrap:"wrap",textAlign:"center"}}>
+          <div style={{height:"80vh",width:"70vw",display:"flex",flexDirection:"row",alignItems:"start",justifyContent:"space-evenly",flexWrap:"wrap",textAlign:"center",paddingBottom:"30px"}}>
           <div style={{width:"35vw",textAlign:"center"}}>
             <h3>Адрес</h3>
             <span>Скобелевская ул., 25, Москва, Россия</span>
             <h3>Номер телефона</h3>
-            <span>8-800-555-35-35</span>
+            <span style={{paddingBottom:"20px"}}>8-800-555-35-35</span>
           </div>
 
           <YMaps>
               <Map defaultState={mapState} width={900} height={500} ><Placemark {...placeMark}/></Map>
           </YMaps>
-          
+
           </div>
       </div>
       <Footer/>

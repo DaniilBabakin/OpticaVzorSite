@@ -3,13 +3,15 @@ export default function Pagination ({productsPerPage,totalProducts,paginate}) {
   for(let i=1;i<=Math.ceil(totalProducts/ productsPerPage);i++){
     pageNumbers.push(i)
   }
- 
+  function topFunction() {
+    window.scrollTo(0,0)
+  }
   return(
     <div>
       <ul className="list">
         {pageNumbers.map((number)=> (
           <li key={number} className="list__item">
-            <button href="" className="button-5" onClick={()=>paginate(number)}>{number}</button>
+            <button href="" className="button-5" onClick={()=>{paginate(number);topFunction();console.log("jfsdio")}}>{number}</button>
           </li>
         ))}
       </ul>
