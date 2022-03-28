@@ -4,6 +4,8 @@ import Header from "../components/header/header";
 import Features from "../components/main/features";
 import MainProducts from "../components/products/main-products/main-products";
 import '../styles/main.css'
+import {Link}  from "react-router-dom"
+import * as ROUTES from '../constants/routes'
 
 export default function Main () {
 
@@ -46,8 +48,8 @@ export default function Main () {
         </div>
 
         <div className="main__buttons__div">
-          <button className="button-62">Каталог</button>
-          <button className="button-62-reverse">Контакты</button>
+          <Link to={ROUTES.PRODUCTS}><button className="button-62">Каталог</button></Link>
+          <Link to={ROUTES.CONTACTS}><button className="button-62-reverse">Контакты</button></Link>
         </div>
         
       </div>

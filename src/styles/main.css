@@ -45,7 +45,7 @@
 .button-62 {
   background: #f27f38;
   margin-right: 20px;
-  border: 0;
+  border: 2px solid #f27f38;
   border-radius: 35px;
   color: #FFFFFF;
   cursor: pointer;
@@ -55,7 +55,7 @@
   font-weight: 500;
   line-height: 2.5;
   outline: transparent;
-  padding: 2px 30px;
+  padding: 0px 28px;
   text-align: center;
   text-decoration: none;
   transition: box-shadow .2s ease-in-out;
@@ -70,6 +70,7 @@
 }
 
 .button-62:not([disabled]):hover {
+  background: none;
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 .button-62-reverse {

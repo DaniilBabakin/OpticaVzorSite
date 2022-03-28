@@ -18,11 +18,11 @@ export default function Contacts (){
       <div style={{paddingTop:"64px",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
 
         {/* Заголовок */}
-        <h1 style={{marginBottom:"30px",marginTop:"50px"}}>Как до нас добраться</h1>
+        <h1 style={{marginBottom:"0px",marginTop:"50px"}}>Как до нас добраться</h1>
 
         {/* Основная часть */}
-          <div style={{height:"80vh",width:"70vw",display:"flex",flexDirection:"row",alignItems:"start",justifyContent:"space-evenly",flexWrap:"wrap",textAlign:"center",paddingBottom:"30px"}}>
-          <div style={{width:"35vw",textAlign:"center"}}>
+          <div style={{height:"80vh",width:"90vw",display:"flex",flexDirection:"row",alignItems:"start",justifyContent:"space-evenly",flexWrap:"wrap",textAlign:"center",paddingBottom:"60px"}}>
+          <div style={{width:"35vw",textAlign:"center",paddingBottom:"30px"}}>
             <h3>Адрес</h3>
             <span>Скобелевская ул., 25, Москва, Россия</span>
             <h3>Номер телефона</h3>
@@ -30,7 +30,7 @@ export default function Contacts (){
           </div>
 
           <YMaps>
-              <Map defaultState={mapState} width={900} height={500} ><Placemark {...placeMark}/></Map>
+              <Map defaultState={mapState} width='100%' height='60%'  ><Placemark {...placeMark}/></Map>
           </YMaps>
 
           </div>

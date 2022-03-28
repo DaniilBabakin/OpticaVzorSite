@@ -44,25 +44,29 @@
   position: relative;
   width: 100%;
   margin-bottom: 40px;
+  margin-right: 15px;
 }
 .prices {
   height:20px;
+  width: 100%;
   background-color: white;
   color:rgb(106, 106, 106);
   position: absolute;
   bottom:0;
-  left:20px;
-  padding:0 5px;
+  padding:0 20px;
 }
 .oldPrice{
   text-decoration: line-through;
   margin-right: 5px;
+  font-weight: 700;
 }
 .newPrice{
   color:red;
+  font-weight: 700;
 }
 .price{
   color:black;
+  font-weight: 700;
 }
 .containerCard .card{
   position: relative;
@@ -154,16 +158,21 @@
   width:250px;
   margin-right:5px;
 }
-
+@media only screen and (max-width: 1280px) {
+  .containerCard{
+    margin-right:20px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .productCard {
     width:150px;
     height:150px;  
   }
   .containerCard{
-    width:150px;
+    width:100%;
     margin-left:0;
     margin-bottom:25px;
+    margin-right:0;
   }
   .products{
     margin:0 !important; 
@@ -179,4 +188,42 @@
   .card__subname{
     font-size: 10px;
   }
+}
+
+
+
+/*-------------------------Карусель----------------------------*/
+.rec.rec-dot {
+}
+.rec.rec-dot_active {
+  background-color: #f27f38;
+  box-shadow: 0 0 1px 3px #f27f38;
+}
+.krmNah:hover
+.krmNah:focus{
+  background-color: #f27f38;
+  box-shadow: 0 0 1px 3px #f27f38;
+}
+.krmNah:hover, .krmNah:focus {
+  cursor: pointer;
+  background-color: #f27f38 !important;
+  box-shadow: 0 0 1px 3px #f27f38 !important;
+}
+ /*Левая кнопка*/
+.eWjCzc{
+  background-color: rgba(183, 123, 58, 0.1) !important;
+}
+.eWjCzc:hover:enabled, .eWjCzc:focus:enabled {
+  color: #fff;
+  background-color: #f27f38 !important;
+  box-shadow: 0 0 2px 0 #333;
+}
+ /*Правая кнопка*/
+.eAyARa{
+  background-color: rgba(183, 123, 58, 0.1) !important;
+}
+.eAyARa:hover:enabled, .eAyARa:focus:enabled {
+  color: #fff;
+  background-color: #f27f38 !important;
+  box-shadow: 0 0 2px 0 #333;
 }
