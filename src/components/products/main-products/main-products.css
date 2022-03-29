@@ -198,6 +198,9 @@
   background-color: #f27f38;
   box-shadow: 0 0 1px 3px #f27f38;
 }
+.rec-carousel-wrapper{
+  padding-bottom: 15px;
+}
 .krmNah:hover
 .krmNah:focus{
   background-color: #f27f38;

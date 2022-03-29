@@ -37,7 +37,7 @@ export default function ProductPageProducts(){
       </div>
 
       {/* Контейнер для пагинации(кнопки) */}
-      <div style={{display:"flex",justifyContent:"center"}}>
+      <div style={{display:"flex",justifyContent:"center",alignContent:"center"}}>
         <Pagination productsPerPage={productsPerPage} totalProducts={currentProductsCount.length} paginate={paginate}/>
       </div>
 

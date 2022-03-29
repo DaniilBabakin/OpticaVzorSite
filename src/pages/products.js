@@ -4,7 +4,7 @@ import ProductPageProducts from "../components/products/productsPage/productsPag
 export default function Products (){
   return(
     <div>
-      <Header active={true}/>
+      <Header active/>
       <ProductPageProducts/>
       <Footer/>
     </div>

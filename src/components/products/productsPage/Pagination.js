@@ -11,7 +11,7 @@ export default function Pagination ({productsPerPage,totalProducts,paginate}) {
       <ul className="list">
         {pageNumbers.map((number)=> (
           <li key={number} className="list__item">
-            <button href="" className="button-5" onClick={()=>{paginate(number);topFunction();console.log("jfsdio")}}>{number}</button>
+            <button href="" className="button-5" onClick={()=>{paginate(number);topFunction()}}>{number}</button>
           </li>
         ))}
       </ul>
