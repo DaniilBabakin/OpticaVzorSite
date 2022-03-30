@@ -1,5 +1,5 @@
 .products__div{
-  padding-top: 64px;
+  padding-top: 94px;
   min-height:100vh;
   background-color: #f5f5f5;
   height: 100%;
@@ -15,26 +15,27 @@
   margin-bottom:30px;
   display:flex;
   align-items: space-between;
+  position: relative;
 }
 
 .list{
   display:flex;
   margin:0 0 15px 0;
+  padding:0;
 }
 .list__item{
   list-style: none;
   margin-right:10px;
 }
-
-.products__aside{
-  border-radius: 15px;
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  top:30%;
+.list__item:last-child{
+  margin:0;
 }
+
+
+
+
+
+
 
 .button-5 {
   width:60px;
@@ -80,8 +81,61 @@
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+@media only screen and (max-width: 768px) {
+  .products__container {
+    width:95vw;
+  }
+}
 @media only screen and (max-width: 500px) {
   .products__container {
     margin:0;
   }
+}
+
+
+
+.button-23 {
+  content:"";
+  position: absolute;
+  top:-15px;
+  right:15px;
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 150px;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
 }
