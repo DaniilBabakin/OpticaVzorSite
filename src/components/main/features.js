@@ -1,6 +1,6 @@
-export default function Features() {
+export default function Features({backgroundColor}) {
   return(
-    <div style={{width:"100%",backgroundColor:"white",padding:"30px 0"}}>
+    <div style={{width:"100%",backgroundColor:backgroundColor,padding:"30px 0"}}>
       <div style={{maxWidth:"1024px",margin:"0 auto",display:"flex",flexDirection:"row",flexWrap:"wrap",justifyContent:"center"}}>
 
         <div style={{display:"flex",flexDirection:"column",justifyItems:"center",alignItems:"center",width:"29%",minWidth:"160px",margin:"15px auto"}}>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 import Features from "../components/main/features";
@@ -53,10 +53,9 @@ export default function Main () {
         </div>
         
       </div>
-
-      <MainProducts lowprice={true} items={products1}/>
-      <Features/>
-      <MainProducts lowprice={false} items={products2}/>
+        <MainProducts lowprice={true} items={products1}/>
+        <Features backgroundColor={"white"}/>
+        <MainProducts lowprice={false} items={products2}/>
       <Footer/>
     </div>
   )

@@ -2,13 +2,13 @@
   background-color: #fafafa;
   margin: 0 !important;
   padding: 0 !important;
+
 }
 .main__img__div {
-  background-image: url("../../public/images/main-photo.jpg");
+  background: url("../../public/images/main-photo.jpg") no-repeat fixed 100%;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
-  background-position: center;
+  width:100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
