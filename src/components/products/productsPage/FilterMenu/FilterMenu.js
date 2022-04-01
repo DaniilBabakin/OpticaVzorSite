@@ -73,6 +73,7 @@ export default function FilterMenu({active,setActive,setFilter,filterValue,produ
                 <li class="sorting__option" value={"Квадратные"} onClick={handleClick}>Квадратные</li>
                 <li class="sorting__option" value={"Прямоугольные"} onClick={handleClick}>Прямоугольные</li>
                 <li class="sorting__option" value={"Овальные"} onClick={handleClick}>Овальные</li>
+                <li class="sorting__option" value={"Кошачий глаз"} onClick={handleClick}>"Кошачий глаз"</li>
               </ul>
           </div>
         </div>

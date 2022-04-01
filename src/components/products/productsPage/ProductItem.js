@@ -5,21 +5,14 @@ export default function ProductItem({item}) {
      {/*Карточка продукта */}
       <div className="productCard">
         <div className="imgBx">
-            <img src={item.url} alt="img"/>
+            <img src={item.url} alt="img" className="products__image"/>
         </div>
-        <div className="prices">
-        {item.oldPrice > 0 
-        ? (
-          <>
-          <span className="oldPrice">{item.oldPrice}₽</span>
-          <span className="newPrice">{item.newPrice}₽</span>
-          </>
-        ) 
-        : (<span className="price">{item.newPrice}₽</span>)}
+        <div className="product__name">
+          {item.name}
+        
         </div>
       </div>
       {/*Цены*/}
-      <p className="card__name">{item.name}</p>
       <span className="card__subname">{item.subName}</span>
     </div>
   )

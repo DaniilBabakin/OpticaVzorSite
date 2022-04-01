@@ -39,6 +39,8 @@
 }
 .card__subname {
   font-size:13px;
+  padding-left:5px;
+  color:rgb(79, 79, 79)
 }
 .containerCard{
   position: relative;
@@ -46,13 +48,14 @@
   margin-bottom: 40px;
   margin-right: 15px;
 }
-.prices {
+.product__name {
   height:20px;
   width: 100%;
   background-color: white;
-  color:rgb(106, 106, 106);
+  color:rgb(0, 0, 0);
   position: absolute;
   bottom:0;
+  font-weight: 500;
   padding:0 20px;
 }
 .oldPrice{
