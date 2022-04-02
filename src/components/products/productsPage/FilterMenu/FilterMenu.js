@@ -20,11 +20,9 @@ export default function FilterMenu({active,setActive,setFilter,filterValue,produ
       setProductsInfo(productsInfo.sort(() => Math.random() - 0.5))
     }
   }
-  console.log(filterValue.length)
-  console.log(priceFilterValue == "")
   //Состояния списков фильтрации
-  const [priceOpen,setPriceOpen] = useState(false)  
   const [glassesFormOpen,setGlassesFormOpen] = useState(false)  
+  const [glassesMaterial,setGlassesMaterial] = useState(false)  
 
   return(
     <div className={"menu__container " + (active ? 'active' : '')} onClick={()=>setActive(false)}>
@@ -52,28 +50,27 @@ export default function FilterMenu({active,setActive,setFilter,filterValue,produ
 
       {/* Выбрать фильтр */}  
         <div className='select__div'>
-          <div className={priceOpen ? "select__title__div" : "select__title__div border"} onClick={()=>setPriceOpen(!priceOpen)}>
-            <span title="Цена" className="select__title">Цена</span>
-          </div>
-          <div className={priceOpen ? 'options__container open' : 'options__container'}>
-              <ul class="sorting__options__wrapper">
-                <li class="sorting__option" onClick={()=>handlePriceChange("По умолчанию")}>по умолчанию</li>
-                <li class="sorting__option" onClick={()=>handlePriceChange("По убыванию")}>по убыванию</li>
-                <li class="sorting__option" onClick={()=>handlePriceChange("По возрастанию")}>по возрастанию</li>
-              </ul>
-          </div>
-        </div>
-        <div className='select__div'>
           <div className={glassesFormOpen ? "select__title__div" : "select__title__div border"} onClick={()=>setGlassesFormOpen(!glassesFormOpen)}>
             <span title="Цена" className="select__title">Форма оправы</span>
           </div>
           <div className={glassesFormOpen ? 'options__container open' : 'options__container'}>
-              <ul class="sorting__options__wrapper">
-                <li class="sorting__option" value={"Круглые"} onClick={handleClick}>Круглые</li>
-                <li class="sorting__option" value={"Квадратные"} onClick={handleClick}>Квадратные</li>
-                <li class="sorting__option" value={"Прямоугольные"} onClick={handleClick}>Прямоугольные</li>
-                <li class="sorting__option" value={"Овальные"} onClick={handleClick}>Овальные</li>
-                <li class="sorting__option" value={"Кошачий глаз"} onClick={handleClick}>"Кошачий глаз"</li>
+              <ul key="2u" className="sorting__options__wrapper">
+                <li className="sorting__option" key={"4l"} value={"Круглые"} onClick={handleClick}>Круглые</li>
+                <li className="sorting__option" key={"5l"} value={"Квадратные"} onClick={handleClick}>Квадратные</li>
+                <li className="sorting__option" key={"6l"} value={"Прямоугольные"} onClick={handleClick}>Прямоугольные</li>
+                <li className="sorting__option" key={"7l"} value={"Овальные"} onClick={handleClick}>Овальные</li>
+                <li className="sorting__option" key={"8l"} value={"Кошачий глаз"} onClick={handleClick}>"Кошачий глаз"</li>
+              </ul>
+          </div>
+        </div>
+        <div className='select__div'>
+          <div className={glassesMaterial ? "select__title__div" : "select__title__div border"} onClick={()=>setGlassesMaterial(!glassesMaterial)}>
+            <span title="Цена" className="select__title">Материал оправы</span>
+          </div>
+          <div className={glassesMaterial ? 'options__container open' : 'options__container'}>
+              <ul key="3u" className="sorting__options__wrapper">
+                <li className="sorting__option" key={"9l"} value={"Пластиковые"} onClick={handleClick}>Пластик</li>
+                <li className="sorting__option" key={"10l"} value={"Металлические"} onClick={handleClick}>Металл</li>
               </ul>
           </div>
         </div>
