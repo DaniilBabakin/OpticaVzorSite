@@ -17,8 +17,8 @@ export default function ProductPageProducts(){
   const lastProductIndex = currentPage * productsPerPage //Последний индекс продукта на странице
   const firstProductIndex = lastProductIndex - productsPerPage  //Первый 
   const currentProducts = productsInfo.filter((item)=> filter.every((value)=>item.category.includes(value))).slice(firstProductIndex,lastProductIndex) //текущие продукты на странице
-  const currentProductsCount = productsPageProducts.filter((item)=> filter.every((value)=>item.category.includes(value))) //количество продуктов в зависимости от фильтров
-  
+  const currentProductsCount = productsInfo.filter((item)=> filter.every((value)=>item.category.includes(value))) //количество продуктов в зависимости от фильтров
+  console.log(productsInfo)
   
   
   const paginate = pageNumber => setCurrentPage(pageNumber)

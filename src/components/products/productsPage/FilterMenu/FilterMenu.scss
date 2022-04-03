@@ -193,6 +193,8 @@
     line-height: 1.2;
     font-size:15px;
     font-weight:300;
+    transform: translate(-5px,-19px) scale(.8);
+    color: #f27f38;
   }
   &__field {
     box-sizing: border-box;
@@ -204,12 +206,6 @@
     background: transparent;
     border-radius: 4px;
     
-    &:focus{
-      & + .input__label {
-        transform: translate(-5px,-19px) scale(.8);
-        color: #f27f38;
-      }
-    }
   }
 }
 

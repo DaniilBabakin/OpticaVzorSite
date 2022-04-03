@@ -31,7 +31,7 @@ export default function Header ({active}) {
       </div>
       
       <div className='hamburger'>
-        <Menu right styles={styles}>
+        <Menu right styles={styles} disableAutoFocus>
             <Link to={ROUTES.MAIN}><p className='links__item'>Главная</p></Link>
             <Link to={ROUTES.PRODUCTS}><p className='links__item'>Каталог</p></Link>
             <Link to={ROUTES.ABOUT_US}><p className='links__item'>О нас</p></Link>
