@@ -24,7 +24,7 @@ export default function ProductPageProducts(){
   const paginate = pageNumber => setCurrentPage(pageNumber)
   return(
     <section className="products__div">
-      <FilterMenu active={active} setActive={setActive} setFilter={setFilter} filterValue={filter} productsInfo={productsInfo} setProductsInfo={setProductsInfo}/>
+      <FilterMenu active={active} setActive={setActive} setFilter={setFilter} filterValue={filter} productsInfo={productsInfo} setProductsInfo={setProductsInfo} productsPageProducts={productsPageProducts}/>
 
       {/* Основной каталог продуктов */}
       <div className="products products__container" style={{display:"flex",marginLeft:"auto",flexDirection:"row",flexWrap:"wrap",alignContent:"start",justifyContent:"space-evenly"}}>

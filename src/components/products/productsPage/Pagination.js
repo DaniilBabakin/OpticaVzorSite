@@ -8,7 +8,7 @@ export default function Pagination ({productsPerPage,totalProducts,paginate}) {
   }
   return(
     <div>
-      <ul className="list">
+      <ul className="list" style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
         {pageNumbers.map((number)=> (
           <li key={number} className="list__item">
             <button href="" className="button-5" onClick={()=>{paginate(number);topFunction()}}>{number}</button>

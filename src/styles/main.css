@@ -2,7 +2,7 @@
   background-color: #fafafa;
   margin: 0 !important;
   padding: 0 !important;
-
+  overflow-x: hidden;
 }
 .main__img__div {
   background: url("../../public/images/main-photo.jpg") no-repeat;

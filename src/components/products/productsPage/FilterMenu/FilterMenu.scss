@@ -174,4 +174,45 @@
 
 
 
+/*-------------------------------------------------------SEARCH BAR-------------------------------------------------------*/
+.input {
+  position: relative;
+  margin-bottom:10px;
+  
+  &__label {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: white;
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size:15px;
+    font-weight:300;
+  }
+  &__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 2px solid currentColor;
+    padding: calc(.5rem * 1.5) .5rem;
+    color: currentColor;
+    background: transparent;
+    border-radius: 4px;
+    
+    &:focus{
+      & + .input__label {
+        transform: translate(-5px,-19px) scale(.8);
+        color: #f27f38;
+      }
+    }
+  }
+}
+
+
+
 
