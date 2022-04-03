@@ -48,7 +48,7 @@ export default function Main () {
         </div>
 
         <div className="main__buttons__div">
-          <Link to={ROUTES.PRODUCTS}><button className="button-62">Каталог</button></Link>
+          <Link to='/products/all'><button className="button-62">Каталог</button></Link>
           <Link to={ROUTES.CONTACTS}><button className="button-62-reverse">Контакты</button></Link>
         </div>
         

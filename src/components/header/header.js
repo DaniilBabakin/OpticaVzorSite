@@ -25,7 +25,7 @@ export default function Header ({active}) {
           </div>
           
           <div className='phone-number'>
-            <p style={{textAlign:"center"}}>8-800-555-35-35</p>
+            <p style={{textAlign:"center"}}>8-916-627-44-13</p>
           </div>
         </div>
       </div>

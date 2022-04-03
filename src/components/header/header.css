@@ -60,7 +60,7 @@ a{
   margin-right: 1rem;
   white-space: nowrap;
   font-weight: 700;
-  color: #999999;
+  color: #d7d7d7;
   cursor: pointer;
 }
 .links__item:hover{
@@ -75,7 +75,11 @@ a{
 .hamburger{
   display:block
 }
-
+.bm-item-list{
+  display:flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
 @media (min-width: 768px) {
   .container {
     max-width: 640px;
@@ -87,6 +91,16 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .phone-number p {
+    margin:0;
+    padding:0;
+  }
+  .phone-subtitle{
+    font-size:13px;
+    width:350px;
   }
   .links__div{
     display:flex;

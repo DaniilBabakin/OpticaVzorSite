@@ -1,4 +1,4 @@
-import { useEffect, useState} from "react"
+import { useEffect, useLayoutEffect, useState} from "react"
 import { productsPageProducts } from "../../../ListOfProducts"
 import '../main-products/main-products.css'
 import Button from "./Button"
@@ -6,19 +6,24 @@ import FilterMenu from "./FilterMenu/FilterMenu"
 import Pagination from "./Pagination"
 import ProductItem from "./ProductItem"
 import './productsPage.css'
-export default function ProductPageProducts(){
+export default function ProductPageProducts({id}){
   const [filter,setFilter] = useState(["all"]) //Фильтрация
   const [currentPage,setCurrentPage] = useState(1) //Пагинация
   const [productsPerPage] = useState(10) //Количество продуктов на страницу(Пагинация)
   const [active,setActive] = useState(false) //Состояние модального окна фильтрации
   const [productsInfo,setProductsInfo] = useState(productsPageProducts)
-  console.log(productsInfo.filter((item)=> filter.every((value)=>item.category.includes(value))))
+  useEffect(() => {
+    if(id!=":id"){
+      setFilter(oldArray => [...oldArray, id])
+    }
+  }, [id])
+  
+  
   //Для работы Пагинации
   const lastProductIndex = currentPage * productsPerPage //Последний индекс продукта на странице
   const firstProductIndex = lastProductIndex - productsPerPage  //Первый 
   const currentProducts = productsInfo.filter((item)=> filter.every((value)=>item.category.includes(value))).slice(firstProductIndex,lastProductIndex) //текущие продукты на странице
   const currentProductsCount = productsInfo.filter((item)=> filter.every((value)=>item.category.includes(value))) //количество продуктов в зависимости от фильтров
-  console.log(productsInfo)
   
   
   const paginate = pageNumber => setCurrentPage(pageNumber)

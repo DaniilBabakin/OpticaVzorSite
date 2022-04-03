@@ -24,9 +24,10 @@ export default function Contacts (){
           <div style={{height:"80vh",width:"90vw",display:"flex",flexDirection:"row",alignItems:"start",justifyContent:"space-evenly",flexWrap:"wrap",textAlign:"center",paddingBottom:"60px"}}>
           <div style={{width:"35vw",textAlign:"center",paddingBottom:"30px"}}>
             <h3>Адрес</h3>
-            <span>Скобелевская ул., 25, Москва, Россия</span>
+            <p style={{paddingBottom:"30px"}}>Скобелевская ул., 25, Москва, Россия</p>
             <h3>Номер телефона</h3>
-            <span style={{paddingBottom:"20px"}}>8-800-555-35-35</span>
+            <p>8-916-627-44-13</p>
+            <span style={{fontWeight:"500"}}>Сообщите,что нашли нас в интернете,пожалуйста</span>
           </div>
 
           <YMaps>
