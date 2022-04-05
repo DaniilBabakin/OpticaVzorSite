@@ -48,6 +48,18 @@
   margin-bottom: 40px;
   margin-right: 15px;
 }
+.lens__text{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding:20px 20px;
+  background-color: #333;
+  color:#c4c4c4;
+  font-size: 17px;
+  line-height: 23px;
+  height: 100%;
+  margin-top:0;
+}
 .product__name {
   min-height:20px;
   width: 100%;
