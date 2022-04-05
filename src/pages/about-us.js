@@ -16,12 +16,15 @@ export default function AboutUs(){
     <div>
       <Header active/>
       <div style={{paddingTop:"64px",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+       {/*Шапка страницы */}
         <div className="about__header">
           <div className="about__header__text">
             <h1 className="about__title">ОПТИКА ВЗОР</h1>
             <p className="about__subtitle">20 лет делаем <span className="bright">Вашу</span> жизнь <span className="bright">ярче</span></p>
           </div>
-          
+
+
+        {/*Контейнер с сервисами */}
         </div>
         <div className="service">
           <div className="service__item" >
@@ -34,13 +37,16 @@ export default function AboutUs(){
           </div>
           <div className="service__item">
             <img src="/images/happy.jpg" className="service__image"/>
-            <p style={{width:"250px",textAlign:"center"}}>Индивидуальный подход к каждому клиенту</p>
+            <p style={{width:"250px",textAlign:"center"}}>Изготовление очков любой сложности</p>
           </div>
         </div>
+
+
+         {/*Преимущества */}
         <Features backgroundColor={"#f27f38"}/> 
-        {/*<div style={{height:"30vh"}}>
-          <h1>Описание компании,краткая история</h1>
-        </div> */}
+
+
+        
         
         
     

@@ -17,8 +17,7 @@ export default function ProductPageProducts({id}){
       setFilter(oldArray => [...oldArray, id])
     }
   }, [id])
-  
-  
+  console.log(filter)
   //Для работы Пагинации
   const lastProductIndex = currentPage * productsPerPage //Последний индекс продукта на странице
   const firstProductIndex = lastProductIndex - productsPerPage  //Первый 

@@ -92,7 +92,7 @@
   align-items: start;
   justify-content: space-evenly;
   width:"60vw";
-  padding:70px 0 50px 0;
+  padding:80px 0 50px 0;
 }
 .service__image{
   width: 200px;
@@ -110,6 +110,34 @@
 .service__item:last-child{
   margin:0;
 }
+
+
+
+/*----------------------------------------------ТИПЫ ОПРАВ----------------------------------------------*/
+.types__span:hover{
+  transform: scale(1.2);
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, rgb(219, 219, 219) 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.types__span{
+  font-size: 20px;
+  transition: 0.3s ease all;
+  padding: 5px 5px;
+}
+@keyframes shine {
+  0% {background-position: 0}
+  60% {background-position: 180px}
+  100%{background-position: 180px}
+}
+  
 
 
 

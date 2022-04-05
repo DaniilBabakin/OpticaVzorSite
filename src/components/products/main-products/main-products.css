@@ -49,7 +49,7 @@
   margin-right: 15px;
 }
 .product__name {
-  height:20px;
+  min-height:20px;
   width: 100%;
   background-color: white;
   color:rgb(0, 0, 0);

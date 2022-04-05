@@ -4,16 +4,13 @@ export default function FilterMenu({active,setActive,setFilter,filterValue,produ
   const [priceFilterValue,setPriceFilterValue] = useState("") // По убыванию / по возрастанию
   const [filteredData, setFilteredData] = useState([]); //фильтрация в строке поиска
   const [wordEntered, setWordEntered] = useState(""); //введенное слово в строке поиска
+  console.log(filterValue.length)
   const handleSearch = (event) =>{
     const searchWord = event.target.value;
     setWordEntered(searchWord);
-
-    console.log(searchWord)
-    console.log(event.target.value)
     const newFilter = productsInfo.filter((product) => {
       return product.name.toLowerCase().includes(searchWord.toLowerCase());
     });
-
     if (searchWord === "") {
       setProductsInfo(productsPageProducts);
     } else {
@@ -22,6 +19,9 @@ export default function FilterMenu({active,setActive,setFilter,filterValue,produ
   }
   const handleClick = (e) => {
     !filterValue.includes(e.target.attributes.value.value) ? setFilter(oldArray => [...oldArray, e.target.attributes.value.value]) : setFilter( filterValue.filter((item) => !item.includes(e.target.attributes.value.value)) )
+  }
+  const handleLensTypes = (e) => {
+    !filterValue.includes(e.target.attributes.value.value) ? setFilter(["all","Линзы"]) : setFilter(["all"])
   }
   const handlePriceChange = (value) => {
     if (value === "По возрастанию"){
@@ -74,6 +74,13 @@ export default function FilterMenu({active,setActive,setFilter,filterValue,produ
 
 
       {/* Выбрать фильтр */}  
+        <div className='select__div'>
+          <div className="options__container open">
+              <ul key="3u" className="sorting__options__wrapper">
+                <li className="sorting__option" key={"0l"} value={"Линзы"} onClick={handleLensTypes}>Линзы</li>
+              </ul>
+          </div>
+        </div>
         <div className='select__div'>
           <div className="options__container open">
               <ul key="3u" className="sorting__options__wrapper">
