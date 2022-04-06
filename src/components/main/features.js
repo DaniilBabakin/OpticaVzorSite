@@ -16,7 +16,7 @@ export default function Features({backgroundColor}) {
           <path strokeLinecap="round" strokeLinejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <h3 style={{textAlign:"center"}}>Индивидуальный подход</h3>
-          <p style={{maxWidth:"300px",margin:"0",textAlign:"center"}}>Подберем лучшие очки.Изготавливаем очки в оправу заказчика.Выполняем заказы рецептурных линз</p>
+          <p style={{maxWidth:"300px",margin:"0",textAlign:"center"}}>Подберем лучшие оправу.Изготавливаем очки в оправу заказчика.Выполняем заказы рецептурных линз</p>
         </div>
 
         <div style={{display:"flex",flexDirection:"column",justifyItems:"center",alignItems:"center",width:"29%",minWidth:"160px",margin:"15px auto"}}>
